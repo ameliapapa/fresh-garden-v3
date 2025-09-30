@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading, 'Instrument Serif', serif);
+  }
+}
+
+:root {
+  --background: #3e5622;
+  --foreground: #122010;
+}
+
+body {
+  background: #3e5622;
+  color: var(--foreground);
+  font-family: var(--font-body, 'Fira Code', monospace);
+}

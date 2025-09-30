@@ -1,0 +1,35 @@
+{
+  "figmaFileId": "Gw9jFaFlulHeUu8U8wuOLl",
+  "figmaFileName": "Fresh-Garden",
+  "startingNodeId": "5999-10563",
+  "mode": "dev",
+  "designTokens": {
+    "colors": true,
+    "typography": true,
+    "spacing": true,
+    "borderRadius": true,
+    "shadows": true,
+    "effects": true
+  },
+  "exportSettings": {
+    "format": ["css", "json"],
+    "includeComponents": true,
+    "includeVariables": true,
+    "includeAssets": true,
+    "assetFormats": ["svg", "png"]
+  },
+  "componentMapping": {
+    "Layout518": "5999-10563",
+    "freshGardenPages": true
+  },
+  "devMode": {
+    "enabled": true,
+    "inspectMode": true,
+    "codeGeneration": true
+  },
+  "sync": {
+    "autoSync": false,
+    "syncOnSave": true,
+    "watchForChanges": true
+  }
+}
