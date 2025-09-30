@@ -2,8 +2,13 @@
 
 import React from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
+import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 
-const imgPlaceholderImage = "http://localhost:3845/assets/2a6354c57c6b0d54922805cb60313905a793bc74.png";
+// Rruga Brigada VIII Ndertesa 8, H16, Ap1, Tiranë 1019, Albania
+const RESTAURANT_LOCATION = {
+  lat: 41.327,
+  lng: 19.819,
+};
 
 export function Contact16() {
   return (
@@ -54,11 +59,18 @@ export function Contact16() {
           </div>
         </div>
         <div className="w-full h-[720px] rounded-[40px] overflow-hidden">
-          <img
-            src={imgPlaceholderImage}
-            alt="Restaurant location map"
-            className="w-full h-full object-cover"
-          />
+          <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+            <Map
+              defaultCenter={RESTAURANT_LOCATION}
+              defaultZoom={15}
+              mapId="fresh-garden-map"
+              style={{ width: '100%', height: '100%' }}
+              gestureHandling="greedy"
+              disableDefaultUI={false}
+            >
+              <Marker position={RESTAURANT_LOCATION} />
+            </Map>
+          </APIProvider>
         </div>
       </div>
     </section>

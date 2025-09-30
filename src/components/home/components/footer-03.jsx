@@ -2,6 +2,7 @@
 
 import React from "react";
 import { BiLogoInstagram } from "react-icons/bi";
+import freshGardenLogo from "@/assets/fresh_garden_logo.png";
 
 export function Footer3() {
   return (
@@ -12,9 +13,9 @@ export function Footer3() {
             <div className="mb-6 md:mb-8">
               <a href="#">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
-                  alt="Logo image"
-                  className="inline-block"
+                  src={freshGardenLogo.src}
+                  alt="Fresh Garden Logo"
+                  className="inline-block w-[85px] h-[82px]"
                 />
               </a>
             </div>
@@ -32,20 +33,20 @@ export function Footer3() {
               </a>
             </div>
             <div className="grid grid-flow-col grid-cols-[max-content] items-start justify-start gap-x-3">
-              <a href="#">
+              <a href="https://www.instagram.com/freshgardenrestaurant/" target="_blank" rel="noopener noreferrer">
                 <BiLogoInstagram className="size-6" />
               </a>
             </div>
           </div>
           <div className="grid grid-cols-1 items-start gap-x-6 gap-y-10 md:grid-cols-2 md:gap-x-8 md:gap-y-4">
             <ul>
-              <li className="text-small py-2 font-semibold">
+              <li className="text-small py-2 font-semibold text-transparent">
                 <a href="#">Menu Overview</a>
               </li>
-              <li className="text-small py-2 font-semibold">
+              <li className="text-small py-2 font-semibold text-transparent">
                 <a href="#">Wine List</a>
               </li>
-              <li className="text-small py-2 font-semibold">
+              <li className="text-small py-2 font-semibold text-transparent">
                 <a href="#">Reservation Info</a>
               </li>
             </ul>
@@ -54,10 +55,10 @@ export function Footer3() {
                 <a href="#">Contact Us</a>
               </li>
               <li className="text-small py-2 font-semibold">
-                <a href="#">Catering Services</a>
+                <a href="#">Menu Overview</a>
               </li>
               <li className="text-small py-2 font-semibold">
-                <a href="#">Join Us</a>
+                <a href="#">Wine List</a>
               </li>
             </ul>
           </div>
