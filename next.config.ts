@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  outputFileTracingRoot: require('path').join(__dirname, '../../'),
+  // Remove outputFileTracingRoot as it's causing path issues on Vercel
 };
 
 export default nextConfig;
