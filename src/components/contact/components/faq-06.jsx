@@ -11,15 +11,15 @@ import { RxPlus } from "react-icons/rx";
 
 export function Faq6() {
   return (
-    <section className="bg-[#31441b] px-[64px] py-[112px]">
+    <section className="bg-[#31441b] px-[5%] py-16 md:py-20 lg:py-[112px]">
       <div className="container mx-auto max-w-[1280px]">
-        <div className="flex gap-[80px]">
-          <div className="w-[500px] flex flex-col gap-8">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-[80px]">
+          <div className="lg:w-[500px] flex flex-col gap-6 lg:gap-8">
             <div className="flex flex-col gap-6">
-              <h2 className="font-heading text-[48px] leading-[1.2] tracking-[-0.48px] text-white">
+              <h2 className="font-heading text-[36px] md:text-[48px] leading-[1.2] tracking-[-0.48px] text-white">
                 FAQs
               </h2>
-              <p className="font-body text-[18px] leading-[1.5] text-white">
+              <p className="font-body text-[16px] md:text-[18px] leading-[1.5] text-white">
                 Find answers to common questions about our reservations, menu options, and special requests.
               </p>
             </div>
@@ -33,7 +33,7 @@ export function Faq6() {
                 icon={
                   <RxPlus className="size-6 shrink-0 text-white transition-transform duration-300 [&[data-state=open]]:rotate-45" />
                 }
-                className="px-6 py-5 text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline"
+                className="px-6 py-5 text-[18px] md:text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline text-left"
               >
                 How do I reserve?
               </AccordionTrigger>
@@ -46,7 +46,7 @@ export function Faq6() {
                 icon={
                   <RxPlus className="size-6 shrink-0 text-white transition-transform duration-300 [&[data-state=open]]:rotate-45" />
                 }
-                className="px-6 py-5 text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline"
+                className="px-6 py-5 text-[18px] md:text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline text-left"
               >
                 Are menu items customizable?
               </AccordionTrigger>
@@ -59,7 +59,7 @@ export function Faq6() {
                 icon={
                   <RxPlus className="size-6 shrink-0 text-white transition-transform duration-300 [&[data-state=open]]:rotate-45" />
                 }
-                className="px-6 py-5 text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline"
+                className="px-6 py-5 text-[18px] md:text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline text-left"
               >
                 Do you offer takeout?
               </AccordionTrigger>
@@ -72,7 +72,7 @@ export function Faq6() {
                 icon={
                   <RxPlus className="size-6 shrink-0 text-white transition-transform duration-300 [&[data-state=open]]:rotate-45" />
                 }
-                className="px-6 py-5 text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline"
+                className="px-6 py-5 text-[18px] md:text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline text-left"
               >
                 What are your hours?
               </AccordionTrigger>
@@ -85,7 +85,7 @@ export function Faq6() {
                 icon={
                   <RxPlus className="size-6 shrink-0 text-white transition-transform duration-300 [&[data-state=open]]:rotate-45" />
                 }
-                className="px-6 py-5 text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline"
+                className="px-6 py-5 text-[18px] md:text-[20px] font-normal leading-[1.5] text-white font-body hover:no-underline text-left"
               >
                 Can I host events?
               </AccordionTrigger>
