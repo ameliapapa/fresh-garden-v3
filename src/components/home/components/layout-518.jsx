@@ -3,10 +3,11 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
-import { buttonStyles } from "../../styles/design-system.ts";
+import { buttonStyles } from "../../../styles/design-system.ts";
 import { RxChevronRight } from "react-icons/rx";
-import menuEnglish from "../../assets/menu_english.pdf";
-import menuAlbanian from "../../assets/menu_albanian.pdf";
+
+const menuEnglish = "/assets/documents/menu_english.pdf";
+const menuAlbanian = "/assets/documents/menu_albanian.pdf";
 
 const balconyCloseup = "/assets/images/balcony_closeup.jpg";
 const backgroundTexture = "/assets/images/background_texture.png";
