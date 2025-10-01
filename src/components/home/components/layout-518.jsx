@@ -47,7 +47,7 @@ export const Layout518 = (props) => {
 
   if (isMobile) {
     return (
-      <section id="relume" className="relative bg-[#31441b] px-[5%] py-12 md:py-20">
+      <section id="relume" className="relative bg-[#31441b] px-[5%] pt-[120px] pb-16">
         <div className="relative mb-8 flex items-center justify-center overflow-hidden rounded-[40px] px-6 py-20 md:mb-12 md:px-8 md:py-28">
           <HeroContent />
         </div>
@@ -74,7 +74,7 @@ export const Layout518 = (props) => {
     <section
       id="relume"
       ref={containerRef}
-      className="relative bg-[#31441b] py-16 md:py-24 lg:h-[250vh] lg:py-0"
+      className="relative bg-[#31441b] pt-[120px] pb-16 lg:h-[250vh] lg:py-0"
     >
       <div className="mx-auto w-[90vw] lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-full lg:items-center lg:justify-center lg:overflow-hidden">
         <div className="grid grid-cols-1 gap-y-6 md:gap-y-8 lg:h-[90vh] lg:w-[90vw] lg:grid-cols-[55vw_35vw] lg:gap-y-0">
