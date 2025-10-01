@@ -80,16 +80,16 @@ export function Testimonial33() {
           >
             <div className="grid size-full auto-cols-fr grid-cols-1 content-center gap-4">
               <TestimonialCard
-                quote="The best Mediterranean food I've ever had! Highly recommend the lamb dishes!"
+                quote="The cauliflower dish and bread were delicious! The waiter super friendly."
               />
               <TestimonialCard
-                quote="Great food with creative and delicious vegetarian and vegan options!"
+                quote="Everything is perfect: the decor, the varied food, the fast and attentive service, the vegetarian and non-vegetarian dishes!"
               />
               <TestimonialCard
                 quote="Great food, nice environment, excellent service."
               />
               <TestimonialCard
-                quote="Best place we have been to in Tirana."
+                quote="It is hard to find something not to like."
               />
               <TestimonialCard
                 quote="Every dish is a work of art. Truly a culinary gem!"
