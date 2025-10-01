@@ -7,9 +7,10 @@ import { buttonStyles } from "../../styles/design-system.ts";
 import { RxChevronRight } from "react-icons/rx";
 import menuEnglish from "../../assets/menu_english.pdf";
 import menuAlbanian from "../../assets/menu_albanian.pdf";
-import balconyCloseup from "../../assets/balcony_closeup.jpg";
-import backgroundTexture from "../../assets/background_texture.png";
-import freshGardenLogo from "../../assets/fresh_garden_logo_256.png";
+
+const balconyCloseup = "/assets/images/balcony_closeup.jpg";
+const backgroundTexture = "/assets/images/background_texture.png";
+const freshGardenLogo = "/assets/images/fresh_garden_logo.png";
 
 export const Layout518 = (props) => {
   const { image, tagline, heading, description, buttons, cards } = {
