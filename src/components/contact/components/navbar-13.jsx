@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import freshGardenLogo from "@/assets/fresh_garden_logo.png";
-
-const imgChevronDown = "http://localhost:3845/assets/ca0326a72c30200fcce53ffc9908e2444e5b4593.svg";
+import imgChevronDown from "@/assets/Navbar/13/Chevron Down.svg";
 
 function CompanyLogo() {
   return (
@@ -49,7 +48,7 @@ export function Navbar13() {
             </div>
           </div>
           <div className="flex gap-[32px] items-center relative shrink-0">
-            <a href="#" className="flex gap-[4px] items-center justify-center relative shrink-0 no-underline">
+            <a href="/" className="flex gap-[4px] items-center justify-center relative shrink-0 no-underline">
               <div className="font-['Fira_Code',_monospace] font-normal text-[16px] text-white whitespace-pre leading-[1.5]">
                 Home
               </div>
@@ -59,7 +58,7 @@ export function Navbar13() {
                 Contact Us
               </div>
             </a>
-            <a href="#" className="flex gap-[4px] items-center justify-center relative shrink-0 no-underline">
+            <a href="/assets/documents/Wine_menu_FreshGardenRestaurant.pdf" target="_blank" rel="noopener noreferrer" className="flex gap-[4px] items-center justify-center relative shrink-0 no-underline">
               <div className="font-['Fira_Code',_monospace] font-normal text-[16px] text-white whitespace-pre leading-[1.5]">
                 Wine List
               </div>
@@ -73,26 +72,26 @@ export function Navbar13() {
                   Menu
                 </div>
                 <div className="relative shrink-0 size-[24px]">
-                  <img alt="Dropdown" className="block max-w-none size-full" src={imgChevronDown} />
+                  <img alt="Dropdown" className="block max-w-none size-full" src={imgChevronDown.src} />
                 </div>
               </button>
               {isDropdownOpen && (
                 <div className="absolute top-full mt-2 left-0 bg-[#172815] rounded-[12px] border border-[rgba(255,255,255,0.2)] p-4 min-w-[160px] z-50">
-                  <a href="#" className="block py-2 px-3 text-white hover:bg-[#3e5622] rounded-[8px] no-underline font-['Fira_Code',_monospace] text-[14px]">
+                  <a href="/assets/documents/menu_albanian.pdf" target="_blank" rel="noopener noreferrer" className="block py-2 px-3 text-white hover:bg-[#3e5622] rounded-[8px] no-underline font-['Fira_Code',_monospace] text-[14px]">
                     Shqip
                   </a>
-                  <a href="#" className="block py-2 px-3 text-white hover:bg-[#3e5622] rounded-[8px] no-underline font-['Fira_Code',_monospace] text-[14px]">
+                  <a href="/assets/documents/menu_english.pdf" target="_blank" rel="noopener noreferrer" className="block py-2 px-3 text-white hover:bg-[#3e5622] rounded-[8px] no-underline font-['Fira_Code',_monospace] text-[14px]">
                     English
                   </a>
                 </div>
               )}
             </div>
           </div>
-          <button className="bg-[#3e5622] box-border flex gap-[8px] items-center justify-center px-[20px] py-[8px] relative rounded-[12px] shrink-0 border border-[#172815] cursor-pointer">
+          <a href="https://app.tableo.com/widget/fresh-garden-restaurant-albania?bgColor=%23ffffff&textColor=%23000000&googleFont=Default+Font&fontSize=14&cornerStyle=none&textAlignment=left&formControlBgColor=%23ffffff&formControlColor=%23000000&formControlBorderColor=%23444444&formControlBorderShadow=6&formControlBorderWidth=1&formControlBorderOpacity=0.1&buttonBgColor=%23000000&buttonTextColor=%23ffffff" target="_blank" rel="noopener noreferrer" className="bg-[#3e5622] box-border flex gap-[8px] items-center justify-center px-[20px] py-[8px] relative rounded-[12px] shrink-0 border border-[#172815] cursor-pointer no-underline">
             <div className="font-['Fira_Code',_monospace] font-medium text-[16px] text-white whitespace-pre leading-[1.5]">
               Reserve
             </div>
-          </button>
+          </a>
         </div>
       </div>
     </motion.div>

@@ -52,13 +52,16 @@ export function Footer3() {
             </ul>
             <ul>
               <li className="text-small py-2 font-semibold">
-                <a href="#">Contact Us</a>
+                <a href="/contact">Contact Us</a>
               </li>
               <li className="text-small py-2 font-semibold">
-                <a href="#">Menu Overview</a>
+                <a href="/assets/documents/menu_albanian.pdf" target="_blank" rel="noopener noreferrer">Menu Shqip</a>
               </li>
               <li className="text-small py-2 font-semibold">
-                <a href="#">Wine List</a>
+                <a href="/assets/documents/menu_english.pdf" target="_blank" rel="noopener noreferrer">English Menu</a>
+              </li>
+              <li className="text-small py-2 font-semibold">
+                <a href="/assets/documents/Wine_menu_FreshGardenRestaurant.pdf" target="_blank" rel="noopener noreferrer">Wine List</a>
               </li>
             </ul>
           </div>

@@ -2,9 +2,6 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef, useState } from "react";
-import yuzuCheesecake from "@/assets/yuzu_cheesecake.jpg";
-import interiorFreshGarden from "@/assets/interior_freshgarden.jpg";
-import fiorentinaSteak from "@/assets/fiorentina_steak.jpg";
 
 const useRelume = () => {
   const transformRef = useRef(null);
@@ -32,7 +29,7 @@ export function Gallery24() {
               <div className="relative size-full max-w-full overflow-hidden">
                 <img
                   className="h-[80vh] max-h-[25rem] rounded-[40px] object-cover sm:max-h-[30rem] sm:w-[90vw] md:max-h-[40rem] md:w-[80vw] lg:max-h-none"
-                  src={yuzuCheesecake.src}
+                  src="/assets/images/yuzu_cheesecake.jpg"
                   alt="Yuzu Cheesecake"
                 />
               </div>
@@ -41,7 +38,7 @@ export function Gallery24() {
               <div className="relative size-full max-w-full overflow-hidden">
                 <img
                   className="h-[80vh] max-h-[25rem] rounded-[40px] object-cover sm:max-h-[30rem] sm:w-[90vw] md:max-h-[40rem] md:w-[80vw] lg:max-h-none"
-                  src={interiorFreshGarden.src}
+                  src="/assets/images/interior_freshgarden.jpg"
                   alt="Interior Fresh Garden Restaurant"
                 />
               </div>
@@ -50,7 +47,7 @@ export function Gallery24() {
               <div className="relative size-full max-w-full overflow-hidden">
                 <img
                   className="h-[80vh] max-h-[25rem] rounded-[40px] object-cover sm:max-h-[30rem] sm:w-[90vw] md:max-h-[40rem] md:w-[80vw] lg:max-h-none"
-                  src={fiorentinaSteak.src}
+                  src="/assets/images/fiorentina_steak.jpg"
                   alt="Fiorentina Steak"
                 />
               </div>

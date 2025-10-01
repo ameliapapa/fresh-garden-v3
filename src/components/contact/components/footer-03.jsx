@@ -33,32 +33,35 @@ export function Footer3() {
               </a>
             </div>
             <div className="grid grid-flow-col grid-cols-[max-content] items-start justify-start gap-x-3">
-              <a href="#">
+              <a href="https://www.instagram.com/freshgardenrestaurant/" target="_blank" rel="noopener noreferrer">
                 <BiLogoInstagram className="size-6" />
               </a>
             </div>
           </div>
           <div className="grid grid-cols-1 items-start gap-x-6 gap-y-10 md:grid-cols-2 md:gap-x-8 md:gap-y-4">
             <ul>
-              <li className="text-small py-2 font-semibold">
+              <li className="text-small py-2 font-semibold text-transparent">
                 <a href="#">Menu Overview</a>
               </li>
-              <li className="text-small py-2 font-semibold">
+              <li className="text-small py-2 font-semibold text-transparent">
                 <a href="#">Wine List</a>
               </li>
-              <li className="text-small py-2 font-semibold">
+              <li className="text-small py-2 font-semibold text-transparent">
                 <a href="#">Reservation Info</a>
               </li>
             </ul>
             <ul>
               <li className="text-small py-2 font-semibold">
-                <a href="#">Contact Us</a>
+                <a href="/contact">Contact Us</a>
               </li>
               <li className="text-small py-2 font-semibold">
-                <a href="#">Catering Services</a>
+                <a href="/assets/documents/menu_albanian.pdf" target="_blank" rel="noopener noreferrer">Menu Shqip</a>
               </li>
               <li className="text-small py-2 font-semibold">
-                <a href="#">Join Us</a>
+                <a href="/assets/documents/menu_english.pdf" target="_blank" rel="noopener noreferrer">English Menu</a>
+              </li>
+              <li className="text-small py-2 font-semibold">
+                <a href="/assets/documents/Wine_menu_FreshGardenRestaurant.pdf" target="_blank" rel="noopener noreferrer">Wine List</a>
               </li>
             </ul>
           </div>

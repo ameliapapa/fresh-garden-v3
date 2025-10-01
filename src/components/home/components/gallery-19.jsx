@@ -9,14 +9,6 @@ import {
 } from "@/components/ui/carousel";
 import clsx from "clsx";
 import React, { useEffect, useState } from "react";
-import shrimppasta from "@/assets/shrimp_pasta.jpg";
-import restaurantentry from "@/assets/restaurant_entry.jpg";
-import couple from "@/assets/laughing_couple_restaurant.jpg";
-import tiramisu from "@/assets/tiramisu.jpg";
-import cocktail from "@/assets/cocktail_espresso_martini.jpg";
-import balcony from "@/assets/restaurant_garden.jpg";
-import tagliatelle from "@/assets/tagliatelle.jpg";
-import pastaragu from "@/assets/pasta_ragu.jpg";
 
 const useCarousel = () => {
   const [api, setApi] = useState();
@@ -68,7 +60,7 @@ export function Gallery19() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
-                      src={restaurantentry.src}
+                      src="/assets/images/restaurant_entry.jpg"
                       alt="Restaurant Entry"
                       className="aspect-square size-full rounded-lg object-cover"
                     />
@@ -77,7 +69,7 @@ export function Gallery19() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
-                      src={balcony.src}
+                      src="/assets/images/restaurant_garden.jpg"
                       alt="Balcony Closeup"
                       className="aspect-square size-full rounded-lg object-cover"
                     />
@@ -86,7 +78,7 @@ export function Gallery19() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
-                      src={tagliatelle.src}
+                      src="/assets/images/tagliatelle.jpg"
                       alt="Tagliatelle Pasta"
                       className="aspect-square size-full rounded-lg object-cover"
                     />
@@ -95,7 +87,7 @@ export function Gallery19() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
-                      src={pastaragu.src}
+                      src="/assets/images/pasta_ragu.jpg"
                       alt="Pasta Ragu"
                       className="aspect-square size-full rounded-lg object-cover"
                     />
@@ -105,7 +97,7 @@ export function Gallery19() {
                   <div className="w-full">
                     <img
                       className="aspect-square size-full rounded-lg object-cover"
-                      src={shrimppasta.src}
+                      src="/assets/images/shrimp_pasta.jpg"
                       alt="Shrimp Pasta"
                     />
                   </div>
@@ -113,7 +105,7 @@ export function Gallery19() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
-                      src={restaurantentry.src}
+                      src="/assets/images/restaurant_entry.jpg"
                       alt="Restaurant Entry"
                       className="aspect-square size-full rounded-lg object-cover"
                     />
@@ -122,7 +114,7 @@ export function Gallery19() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
-                      src={couple.src}
+                      src="/assets/images/laughing_couple_restaurant.jpg"
                       alt="Couple Laughing in Restaurant"
                       className="aspect-square size-full rounded-lg object-cover"
                     />
@@ -131,7 +123,7 @@ export function Gallery19() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
-                      src={tiramisu.src}
+                      src="/assets/images/tiramisu.jpg"
                       alt="Tiramisu Dessert"
                       className="aspect-square size-full rounded-lg object-cover"
                     />

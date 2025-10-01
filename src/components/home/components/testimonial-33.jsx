@@ -3,10 +3,7 @@
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
-
-// Figma assets
-const imgStars = "http://localhost:3845/assets/487ff792061bc4aa201b4b1ec1ca3db1c610b822.svg";
-const imgVector = "http://localhost:3845/assets/3684fa8d381d2f38c4bc7478732a63f226b91b8c.svg";
+import chevronRight from "@/assets/Layout/518/chevron_right.svg";
 
 const useAnimation = () => {
   const sectionRef = useRef(null);
@@ -67,17 +64,13 @@ export function Testimonial33() {
             </p>
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-6">
-            <button className="bg-[#3e5622] border-none rounded-[12px] px-6 py-2.5 cursor-pointer">
+            <a href="https://www.google.com/maps/place/Fresh+Garden+Restaurant/@41.3223598,19.8139672,16z/data=!4m16!1m9!3m8!1s0x1350311ddad4dfe3:0x924dcbbf107c4aca!2sFresh+Garden+Restaurant!8m2!3d41.3222497!4d19.8165136!9m1!1b1!16s%2Fg%2F11h10w5fhh!3m5!1s0x1350311ddad4dfe3:0x924dcbbf107c4aca!8m2!3d41.3222497!4d19.8165136!16s%2Fg%2F11h10w5fhh?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="bg-[#3e5622] border-none rounded-[12px] px-6 py-2.5 cursor-pointer no-underline inline-block">
               <span className="font-body text-[16px] leading-[1.5] font-medium text-white">Read</span>
-            </button>
-            <button className="bg-transparent border-none cursor-pointer flex items-center gap-2">
+            </a>
+            <a href="https://app.tableo.com/widget/fresh-garden-restaurant-albania?bgColor=%23ffffff&textColor=%23000000&googleFont=Default+Font&fontSize=14&cornerStyle=none&textAlignment=left&formControlBgColor=%23ffffff&formControlColor=%23000000&formControlBorderColor=%23444444&formControlBorderShadow=6&formControlBorderWidth=1&formControlBorderOpacity=0.1&buttonBgColor=%23000000&buttonTextColor=%23ffffff" target="_blank" rel="noopener noreferrer" className="bg-transparent border-none cursor-pointer flex items-center gap-2 no-underline">
               <span className="font-body text-base font-medium text-white">Reserve</span>
-              <div className="w-6 h-6 relative">
-                <div className="absolute inset-[25.72%_36.66%_25.88%_35.46%]">
-                  <img alt="" className="block max-w-none size-full" src={imgVector} />
-                </div>
-              </div>
-            </button>
+              <img src={chevronRight.src} alt="" className="w-6 h-6" />
+            </a>
           </div>
         </div>
         <div className="grid h-[900px] auto-cols-fr grid-cols-1 content-center items-center gap-4 overflow-hidden px-4 md:grid-cols-2 md:px-8 lg:border-none lg:pr-8 lg:pl-0">
@@ -131,8 +124,12 @@ export function Testimonial33() {
 const TestimonialCard = ({ quote, name, role, showAvatar }) => (
   <div className="bg-scheme-2-fg flex w-full flex-col items-start justify-between p-8 rounded-md">
     <div className="mb-6">
-      <div className="mb-4 h-6 w-[140.329px]">
-        <img alt="5 stars" className="block max-w-none size-full" src={imgStars} />
+      <div className="mb-4 flex gap-1">
+        {[...Array(5)].map((_, i) => (
+          <svg key={i} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L14.09 8.26L20 10L14.09 11.74L12 18L9.91 11.74L4 10L9.91 8.26L12 2Z" fill="#FFD700"/>
+          </svg>
+        ))}
       </div>
       <blockquote className="font-body text-lg text-white leading-[1.5]">
         "{quote}"

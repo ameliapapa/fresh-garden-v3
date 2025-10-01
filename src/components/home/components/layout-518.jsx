@@ -3,12 +3,14 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "../../../hooks/use-media-query";
+import chevronRight from "@/assets/Layout/518/chevron_right.svg";
+import chevronRightBlack from "@/assets/Layout/518/chevron_right_black.svg";
 
-// Figma assets
-const imgCard = "http://localhost:3845/assets/9544fa14f0eb83e8bef74a07f3eae85606e2796d.png";
-const imgCard1 = "http://localhost:3845/assets/ec11cd361aacdf3be9284541016348df0e3f7158.png";
-const img = "http://localhost:3845/assets/d949437f676c1e7cae0d56d77fa008149c8fcba3.svg";
-const img1 = "http://localhost:3845/assets/a23ea3ef50748910b8c7962ce32597c48775041c.svg";
+// Assets
+const imgCard = "/assets/images/balcony_closeup.jpg";
+const imgCard1 = "/assets/images/background_texture.png";
+const img = chevronRightBlack;
+const img1 = chevronRight;
 
 export const Layout518 = (props) => {
   const { image, tagline, heading, description, buttons, cards } = {
@@ -137,21 +139,13 @@ const CardContent = ({
             <span className="font-body text-[14px] leading-[1.5] font-medium text-black md:text-[16px]">
               Shqip
             </span>
-            <div className="relative size-[20px] overflow-clip md:size-[24px]">
-              <div className="absolute inset-[25.72%_36.66%_25.88%_35.46%]">
-                <img src={img} alt="" className="block max-w-none size-full" />
-              </div>
-            </div>
+            <img src={img.src} alt="" className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" />
           </button>
           <button className="flex cursor-pointer items-center justify-center gap-1.5 rounded-sm border-none bg-transparent p-0 md:gap-2">
             <span className="font-body text-[14px] leading-[1.5] font-medium text-black md:text-[16px]">
               English
             </span>
-            <div className="relative size-[20px] overflow-clip md:size-[24px]">
-              <div className="absolute inset-[25.72%_36.66%_25.88%_35.46%]">
-                <img src={img} alt="" className="block max-w-none size-full" />
-              </div>
-            </div>
+            <img src={img.src} alt="" className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" />
           </button>
         </>
       ) : (
@@ -159,11 +153,7 @@ const CardContent = ({
           <span className="font-body text-[14px] leading-[1.5] font-medium text-white md:text-[16px]">
             Wine List
           </span>
-          <div className="relative size-[20px] overflow-clip md:size-[24px]">
-            <div className="absolute inset-[25.72%_36.66%_25.88%_35.46%]">
-              <img src={img1} alt="" className="block max-w-none size-full" />
-            </div>
-          </div>
+          <img src={img1.src} alt="" className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" />
         </button>
       )}
     </div>
