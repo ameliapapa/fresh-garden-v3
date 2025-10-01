@@ -44,10 +44,10 @@ export function Gallery19() {
   const carouselState = useCarousel();
   return (
     <section className="bg-[#172815]">
-      <div className="px-16 py-28">
+      <div className="px-[5%] py-16 md:py-20 lg:py-28">
         <div className="container mx-auto max-w-[1280px]">
-          <div className="mb-20 text-center">
-            <h2 className="font-heading text-[56px] leading-[1.2] tracking-[-0.56px] text-white mb-6">
+          <div className="mb-12 md:mb-16 lg:mb-20 text-center">
+            <h2 className="font-heading text-[32px] md:text-[44px] lg:text-[56px] leading-[1.2] tracking-[-0.56px] text-white mb-4 md:mb-6">
               Follow us @freshgardenrestaurant
             </h2>
           </div>
@@ -57,7 +57,7 @@ export function Gallery19() {
           >
             <div className="relative">
               <CarouselContent className="ml-0">
-                <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
+                <CarouselItem className="basis-full px-2 sm:basis-1/2 sm:px-3 md:basis-1/3 lg:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
                       src="/assets/images/restaurant_entry.jpg"
@@ -66,7 +66,7 @@ export function Gallery19() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
+                <CarouselItem className="basis-full px-2 sm:basis-1/2 sm:px-3 md:basis-1/3 lg:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
                       src="/assets/images/restaurant_garden.jpg"
@@ -75,7 +75,7 @@ export function Gallery19() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
+                <CarouselItem className="basis-full px-2 sm:basis-1/2 sm:px-3 md:basis-1/3 lg:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
                       src="/assets/images/tagliatelle.jpg"
@@ -84,7 +84,7 @@ export function Gallery19() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
+                <CarouselItem className="basis-full px-2 sm:basis-1/2 sm:px-3 md:basis-1/3 lg:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
                       src="/assets/images/pasta_ragu.jpg"
@@ -93,7 +93,7 @@ export function Gallery19() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
+                <CarouselItem className="basis-full px-2 sm:basis-1/2 sm:px-3 md:basis-1/3 lg:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
                       className="aspect-square size-full rounded-lg object-cover"
@@ -102,7 +102,7 @@ export function Gallery19() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
+                <CarouselItem className="basis-full px-2 sm:basis-1/2 sm:px-3 md:basis-1/3 lg:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
                       src="/assets/images/restaurant_entry.jpg"
@@ -111,7 +111,7 @@ export function Gallery19() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
+                <CarouselItem className="basis-full px-2 sm:basis-1/2 sm:px-3 md:basis-1/3 lg:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
                       src="/assets/images/laughing_couple_restaurant.jpg"
@@ -120,7 +120,7 @@ export function Gallery19() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="basis-1/2 px-3 md:basis-1/4 md:px-4">
+                <CarouselItem className="basis-full px-2 sm:basis-1/2 sm:px-3 md:basis-1/3 lg:basis-1/4 md:px-4">
                   <div className="w-full">
                     <img
                       src="/assets/images/tiramisu.jpg"
@@ -131,13 +131,13 @@ export function Gallery19() {
                 </CarouselItem>
               </CarouselContent>
               <CarouselPrevious
-                className="hidden md:flex md:size-12 lg:size-14 !border-0 !text-white transition-colors"
+                className="flex size-10 md:size-12 lg:size-14 !border-0 !text-white transition-colors -left-4 sm:-left-5 md:-left-6"
                 style={{ backgroundColor: '#3e5622' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(62, 86, 34, 0.9)'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#3e5622'}
               />
               <CarouselNext
-                className="hidden md:flex md:size-12 lg:size-14 !border-0 !text-white transition-colors"
+                className="flex size-10 md:size-12 lg:size-14 !border-0 !text-white transition-colors -right-4 sm:-right-5 md:-right-6"
                 style={{ backgroundColor: '#3e5622' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(62, 86, 34, 0.9)'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#3e5622'}
